@@ -1,0 +1,734 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    FONT-FAMILY: 'Alegreya', sans-serif;
+}
+.blue-container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(28, 132, 230), rgb(99, 134, 167) ) no-repeat;
+}
+.blue-space {
+    height: 10px;  /* Aici cum pot face fara acest DIV ??? - sa nu am linie alba */
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+a.logo img {
+    margin-left: 40px;
+    height: 40px;
+    width: 50px; 
+}
+
+ul.menu-list {
+    text-align: right;
+    display: inline-block;
+    width: 75%;
+}
+
+ul.menu-list li {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 25px;
+    font-size: 110%;
+}
+.current {
+    color: rgb(185, 172, 172);
+}
+ul.menu-list li a:hover {
+    color: rgb(185, 172, 172);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-buttons {
+    width: 15%;
+    text-align: right;
+    display: inline-block;
+}
+
+.navbar-buttons a {
+    width: 35px;
+    margin: 0 15px 5px 0;
+}
+
+.signUp:hover, .loginBtn:hover {
+    border: 1px solid rgb(185, 172, 172);;
+    border-radius: 5px;
+    padding: 7px 15px 7px 15px;
+    color: rgb(185, 172, 172);
+}
+
+.loginBtn {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px 15px 7px 15px;
+}
+
+#menu-icon {
+    display: none;
+    width: 35px;
+    height: 35px;
+    background: url('/img/nav.png') center;
+}
+a:hover#menu-icon {
+    border-radius: 4px 4px 0 0;
+}
+
+/*** Title ***/
+
+.title-container {
+    text-align: center;
+}
+.main-header {
+    text-align: center;
+    margin-top: 7%;
+    color: white;
+}
+.title-container h1, .title-container h4  {
+    padding-bottom: 5px;
+}
+.pricing-title {
+    text-align: center;
+    margin-top: 3%;
+    color: rgb(175, 166, 166);
+    font-size: 90%;
+}
+.joinCommunityBtn,
+.sellDigitalBtn,
+.postProject,
+.hireFreelancer {
+    margin: 3% 10px 0 10px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.joinCommunityBtn:hover,
+ .sellDigitalBtn:hover,
+ .postProject:hover,
+ .hireFreelancer:hover {
+    background: grey;
+    color: rgb(184, 212, 24);
+}
+
+.joinCommunityBtn, .postProject {
+    background: rgb(236, 87, 112);
+}
+.sellDigitalBtn, .hireFreelancer {
+    background: rgb(226, 156, 26);
+}
+
+.white-rectangle {
+    position: relative;
+    width: 560px;
+    height: 15px;
+    background: whitesmoke;
+    margin: 0 auto;
+    z-index: 10;
+    opacity: 0.3;
+    border-radius: 7px 7px 0 0;
+}
+.main-img {
+    margin-top: 4%;
+    text-align: center;
+}
+.main-img img {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 3px rgb(110, 109, 109);
+    /* box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.75); */
+    /* box-shadow: 2px 2px 3px rgb(110, 109, 109), -2px 2px 3px rgb(110, 109, 109); */
+}
+
+.busyBusiness {
+    margin-top: 230px;
+    text-align: center;
+}
+
+.busyBusiness h1 {
+    margin-bottom: 10px;
+}
+.busyBusiness > h5:first-of-type{
+    margin: 10px 0 4% 0;
+    color: grey;
+}
+
+/* **** Business Cards section **** */
+
+.business-cards {
+    text-align: center;
+    margin-top: 4%;
+}
+.card {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background: url('./img/pexels-card-1.jpeg') center;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 5px;
+    text-align: left;
+    overflow: hidden;
+}
+
+ #small-icon {
+    position: relative;
+    margin: 10px 0 0 10px;
+    color: rgb(22, 153, 230);
+    z-index: 3;
+}
+#big-icon {
+    position: absolute;
+    bottom: -6px;
+    right: -3px;
+    margin-right: 0;
+    color: rgb(13, 158, 241);
+}
+
+.card p {
+    position: relative;
+    color: black;
+    margin-top: 10px;
+    z-index: 5;
+    padding: 10px;
+    font-size: 100%;
+}
+
+.business-cards .card::after
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(236, 232, 232, 0.6);
+    box-shadow: inset 120px 100px 250px #f3eded, inset -120px -100px 250px #f3eded;
+    opacity: 0.9;
+}
+
+.checkPlatform {
+    margin: 4% auto;
+    width: 65%;
+    height: 130px;
+    background-color: #ee5522;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23FB3'/%3E%3Cstop offset='1' stop-color='%23ee5522'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23f7882b'/%3E%3Cstop offset='1' stop-color='%23ee5522'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.1' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.checkPlatform > div {
+    color: white;
+    line-height: 160%;
+}
+.checkBtn {
+    padding: 10px 20px 10px 20px;
+    color: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.checkBtn:hover {
+    background: grey;
+    color: white;
+}
+
+/* *** FEATURES **** */
+
+.features {
+    text-align: center;
+    margin-top: 7%;
+}
+.features > h5 {
+    margin: 10px 0 4% 0;
+    color: grey;
+}
+
+.centerGrid {
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 40px;
+}
+.featuresOptions {
+    text-align: left;
+    width: 300px;
+    height: 170px;
+    /* border: 1px solid grey; */
+    border-radius: 5px;
+}
+
+.feature {
+    padding: 7px;
+    border-radius: 5px;
+    margin: 10px 0 10px 10px;
+    color: white;
+}
+
+.feature-1 {
+    background: rgb(214, 75, 117);
+}
+.feature-2 {
+    background: rgb(156, 28, 139);
+    padding: 7px 8px 7px 8px;
+}
+.feature-3 {
+    background: rgb(131, 30, 190);
+    padding: 7px 8px 7px 8px;
+}
+.feature-4 {
+    background: rgb(20, 83, 134);
+    padding: 7px 6px 7px 6px;
+}
+.feature-5 {
+    background: rgb(65, 67, 155);
+    padding: 7px 11px 7px 11px;
+}
+.feature-6 {
+    background: rgb(36, 203, 209);
+}
+
+.featuresOptions > h4 {
+    margin: 10px 0 5px 10px;
+}
+.featuresOptions p {
+    color: black;
+    padding: 10px;
+    font-size: 100%;
+}
+/* **** How it works section **** */
+.how-Works {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.how-Works > h5:first-of-type{
+    margin: 10px 0 4% 0;
+    color: grey;
+}
+
+footer {
+    text-align: center;
+    color: grey;
+}
+
+/* *** Freelancer sub-section *** */
+.asFreelancer {
+    margin: 4% auto;
+    width: 65%;
+    height: 67vh;
+    background: linear-gradient(to bottom right, rgb(15, 64, 226), rgb(138, 190, 199) ) no-repeat;
+    border-radius: 10px;
+}
+.imgFreelancer {
+    float: left;
+    margin: 0 auto;
+    width: 50%;
+    height: 500px;
+}
+
+.imgFreelancer img {
+    border-radius: 10px;
+    width: 100%;
+    height: 460px;
+    transform: rotate(1.5deg);
+    margin-top: 20px;
+    float: left;
+    margin-left: -80px;
+}
+
+.content-Freelancer {
+    position: relative;
+    float: right;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    color: white;
+    text-align: left;
+}
+
+.content-Freelancer > h2 {
+    margin-top: 70px; 
+}
+
+.content-Freelancer > h4 {
+    margin-top: 40px;
+    padding-left: 30px;
+}
+
+.content-Freelancer > p {
+    margin-top: 15px;
+    padding-right: 50px;
+    padding-left: 30px;
+    font-size: 90%;
+}
+.vertical-Line {
+    position: absolute;
+    border-left: 2px solid white;
+    height: 110px;
+    top: 145px;
+    left: 0;
+    margin-left: 10px;
+}
+#circle-1 {
+    position: absolute;
+    top: 143px;
+    left: -4px;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%
+  }
+#circle-2 {
+    position: absolute;
+    top: 245px;
+    left: -4px;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%
+  }
+
+.joinBtn {
+    margin-top: 15%;
+    padding: 10px 20px 10px 20px;
+    color: rgb(155, 58, 79);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.joinBtn:hover {
+    background: grey;
+    color: white;
+}
+
+/**** Selling your Products - sub-Section ***/
+.sellingProducts {
+    position: relative;
+    margin: 4% auto;
+    width: 65%;
+    height: 500px;
+    background: linear-gradient(to bottom right, rgb(226, 15, 131), rgb(199, 138, 175) ) no-repeat;
+    border-radius: 10px;
+}
+.img-sellingProducts {
+    float: right;
+    margin: 0 auto;
+    width: 50%;
+    height: 500px;
+}
+
+.img-sellingProducts img {
+    
+    width: 100%;
+    height: 460px;
+    margin-top: 20px;
+    float: right;
+    margin-right: -80px;
+    -webkit-clip-path:polygon(0% 5%, 100% 0%,100% 100%, 0% 95%);
+    clip-path:polygon(0% 5%, 100% 0%,100% 100%, 0% 95%);
+    border-radius: 10px;
+}
+.content-sellingProducts {
+    position: relative;
+    float: left;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    color: white;
+    text-align: left;
+}
+.content-sellingProducts > h2 {
+    margin-top: 70px;
+    margin-left: 40px; 
+}
+.content-sellingProducts > h3 {
+    margin-top: 40px;
+    padding-left: 65px;
+    font-size: 90%;
+}
+.content-sellingProducts > button {
+    margin-left: 65px;
+}
+
+.sellingProducts:after {
+    position: absolute;
+    content: '';
+    height: 130px;
+    border-left: 3px solid  white;
+    z-index: 10;
+    left: 45px;
+    top: 145px;
+}
+#circle-11, #circle-21, #circle-31 {
+    position: absolute;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    z-index: 10;
+}
+#circle-11 {
+    top: 143px;
+    left: 32px;
+}
+#circle-21 {
+    top: 200px;
+    left: 32px;
+}
+#circle-31 {
+    top: 270px;
+    left: 32px;
+}
+
+/*** 6expertise SECTION ***/
+.sixExpertise {
+    margin: 5% auto;
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: #00b7ff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+    border-radius: 10px;
+}
+.content-expertise {
+    text-align: left;
+    color: white;
+    margin-left: 10px;
+}
+.content-expertise > h2 {
+    margin-bottom: 10px;
+}
+.content-expertise > p {
+    font-size: 90%;
+}
+
+.postProject {
+    padding: 10px 30px 10px 30px; 
+    box-shadow: 0px 3px 25px 3px rgb(110, 109, 109);
+}
+.hireFreelancer {
+    box-shadow: 0px 3px 25px 3px rgb(110, 109, 109);
+}
+
+/*** Contact Us - Section ***/
+.contactUs {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 65%;
+    word-wrap: break-word;
+}
+/* First Column */
+.firstColumn {
+    margin-right: 7%;
+}
+.email, .phone {
+    color: grey; 
+}
+.email > p, .phone > p  {
+    display: inline-block;
+    font-size: 90%;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+.socialMediaTitle {
+    margin-top: 25px;
+}
+.socialMediaIcons > .icon {
+    font-size: 150%;
+    padding-right: 25px;
+    color: grey;
+    margin-top: 10px;
+}
+.socialMediaIcons .icon:first-of-type {
+    color: rgb(39, 107, 209);
+}
+
+/* Second Column */
+.secondColumn {
+    margin-right: 16%;
+}
+.secondColumn > p {
+    padding: 15px 0;
+    font-size: 90%;
+    color: grey;
+}
+.secondColumn > p:first-of-type {
+    color:rgb(39, 107, 209);
+}
+/* Third Column */
+.thirdColumn {
+    margin-right: 16%;
+}
+.thirdColumn > p {
+    padding-top: 15px;
+    font-size: 90%;
+    color: grey;
+}
+/* Forth Column */
+.contactImages {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-gap: 8px;
+    margin-top: 15px;
+}
+.contactImg {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+/* Footer Section */
+footer {
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
+/**************/
+
+@media (min-height: 600px) {
+    .busyBusiness {
+        margin-top: 230px;
+    }
+}
+
+@media (max-width:1400px) {
+    .contactUs {
+        display: flex;
+        justify-content: center;
+    }
+    .firstColumn {
+        margin-right: 12%;
+    }
+    .thirdColumn {
+        margin-right: 5%;
+    }
+    .forthColumn {
+        margin-top: 3%;
+        margin-left: 10%; 
+    }
+}
+@media (max-width: 1115px){ 
+    .navbar-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    .signUp {
+        margin-left: 7px!important;
+    }
+    .signUp:hover {
+        padding:  0 25px 0 6px;
+        border: none;
+    }
+}
+
+@media (max-width:1040px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-gap: 40px;
+    } 
+}
+@media (max-width:850px) {
+    
+    .thirdColumn {
+        margin-left: 0%;
+        margin-right: 35%;
+        margin-top: 3%;
+    }
+    .forthColumn {
+        margin-left: 5%;  
+    }
+}
+
+
+
+@media (max-width:750px) {
+    /*** de aici trebuie sa transformam nav-barul in icoana cu 3 linii si cu hover - sa apara meniul ***/
+    #menu-icon {
+        display: inline-block;
+        margin-left: 55%;
+    }
+
+    .navbar .menu-list, .navbar:active .menu-list {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 20px;
+        background: #6991AC;
+        right: 80px;
+        top: 80px;
+        border: 1px solid #FFF;
+        border-radius: 0px 10px 10px 10px;
+        width: 15%; 
+    }
+
+    /* .navbar:hover .menu-list {
+        display: block;
+    } */
+    
+    .showNav {
+        display: block!important;
+    }
+
+    .navbar .menu-list li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+
+    .asFreelancer {
+        height: 75vh; 
+    }
+    .imgFreelancer img {
+        margin-top: 45px;
+    }
+    .sellingProducts {
+        height: 75vh;
+    }
+    .sellingProducts img {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width:700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-gap: 40px;
+    }
+    .thirdColumn {
+        margin-left: 5%;
+    }
+}
